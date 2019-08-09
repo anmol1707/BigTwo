@@ -1,13 +1,15 @@
+package com.bigtwo;
+
 /**
  * An interface for a general card game table (GUI)
- * 
+ *
  * @author Kenneth Wong
- * 
+ *
  */
 public interface CardGameTable {
 	/**
 	 * Sets the index of the active player (i.e., the current player).
-	 * 
+	 *
 	 * @param activePlayer
 	 *            an int value representing the index of the active player
 	 */
@@ -15,7 +17,7 @@ public interface CardGameTable {
 
 	/**
 	 * Returns an array of indices of the cards selected.
-	 * 
+	 *
 	 * @return an array of indices of the cards selected
 	 */
 	public int[] getSelected();
@@ -32,7 +34,7 @@ public interface CardGameTable {
 
 	/**
 	 * Prints the specified string to the message area of the card game table.
-	 * 
+	 *
 	 * @param msg
 	 *            the string to be printed to the message area of the card game
 	 *            table

@@ -1,3 +1,10 @@
+package com.bigtwo.Hands;
+
+import com.bigtwo.BigTwoCard;
+import com.bigtwo.Card;
+import com.bigtwo.CardGamePlayer;
+import com.bigtwo.CardList;
+
 /**
  * This class is an abstract class that defines a structure of a hand. It is inherited by other subclasses
  * which specify the behavior based on the type of the hand./
@@ -11,7 +18,7 @@ public abstract class Hand extends CardList {
 
     private CardGamePlayer player; // The player who is playing this hand.
     private int handLevel; // Value indicating the strength of the type of hand
-                            // (StraightFlush has highest value while Single has the lowest)
+                            // (com.bigtwo.Hands.StraightFlush has highest value while com.bigtwo.Hands.Single has the lowest)
 
     /**
      *
@@ -74,10 +81,10 @@ public abstract class Hand extends CardList {
             return true;
         }
         if(this.handLevel == 4) {
-            if(this.getCard(0).suit > hand.getCard(0).suit) {
+            if(this.getCard(0).getSuit() > hand.getCard(0).getSuit()) {
                 return true;
             }
-            if(this.getCard(0).suit < hand.getCard(0).suit) {
+            if(this.getCard(0).getSuit() < hand.getCard(0).getSuit()) {
                 return false;
             }
         }
@@ -96,7 +103,7 @@ public abstract class Hand extends CardList {
     /**
      *
      * This is an abstract function that just declares a function which is overridden by its child classes
-     * and returns the type of the Hand.
+     * and returns the type of the com.bigtwo.Hands.Hand.
      *
      * @return A String indicating the type of the hand.
      */
@@ -109,8 +116,8 @@ public abstract class Hand extends CardList {
         }
         sort();
         for(int i = 0; i < size() - 1; i++) {
-            int card1Rank = (((BigTwoCard) getCard(i)).rank + 11) % 13;
-            int card2Rank = (((BigTwoCard) getCard(i+1)).rank + 11) % 13;
+            int card1Rank = (((BigTwoCard) getCard(i)).getRank() + 11) % 13;
+            int card2Rank = (((BigTwoCard) getCard(i+1)).getRank() + 11) % 13;
             if(card1Rank + 1 != card2Rank) {
                 return false;
             }
@@ -122,9 +129,9 @@ public abstract class Hand extends CardList {
         if(size() == 0) {
             return false;
         }
-        int rank = getCard(0).rank;
+        int rank = getCard(0).getRank();
         for(int i = 1; i < size(); i++) {
-            if(getCard(i).rank != rank) {
+            if(getCard(i).getRank() != rank) {
                 return false;
             }
         }
@@ -135,9 +142,9 @@ public abstract class Hand extends CardList {
         if(size() == 0) {
             return false;
         }
-        int suit = getCard(0).suit;
+        int suit = getCard(0).getSuit();
         for(int i = 1; i < size(); i++) {
-            if(getCard(i).suit != suit) {
+            if(getCard(i).getSuit() != suit) {
                 return false;
             }
         }

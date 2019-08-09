@@ -1,5 +1,7 @@
+package com.bigtwo;
+
 /**
- * This class is a subclass of the Card class and specifies the compareTo function to give the correct order of
+ * This class is a subclass of the com.bigtwo.Card class and specifies the compareTo function to give the correct order of
  * priority of cards based on the rules of the BigTwo game.
  *
  * @author Anmol Gupta
@@ -8,7 +10,7 @@ public class BigTwoCard extends Card {
 
     /**
      *
-     * A public constructor method that initializes a BigTwoCard based on the suit and the rank provided as parameters.
+     * A public constructor method that initializes a com.bigtwo.BigTwoCard based on the suit and the rank provided as parameters.
      *
      * @param suit The suit of the card to be formed.
      * @param rank The rank of the card to be formed.
@@ -19,7 +21,7 @@ public class BigTwoCard extends Card {
 
     /**
      *
-     * This method overrides the compareTo function of the Card class to give the correct order of
+     * This method overrides the compareTo function of the com.bigtwo.Card class to give the correct order of
      * priority of cards based on the rules of the BigTwo game.
      *
      * @param card the card to be compared

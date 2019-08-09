@@ -1,3 +1,7 @@
+package com.bigtwo;
+
+import com.bigtwo.Hands.Hand;
+
 import javax.swing.*;
 import javax.swing.text.DefaultCaret;
 import java.awt.*;
@@ -8,7 +12,7 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
 /**
- * The BigTwoTable class implements the CardGameTable interface. It builds a GUI for the Big Two card game
+ * The com.bigtwo.BigTwoTable class implements the com.bigtwo.CardGameTable interface. It builds a GUI for the Big Two card game
  * and handle all user actions.
  *
  * @author Anmol Gupta
@@ -31,7 +35,7 @@ public class BigTwoTable implements CardGameTable {
     private boolean clickEnabled; // a boolean specifying whether selecting cards is allowed or not.
 
     /**
-     * A constructor for the BigTwoTable class that loads the images into arrays
+     * A constructor for the com.bigtwo.BigTwoTable class that loads the images into arrays
      * and initializes the GUI by drawing it on the frame.
      *
      * @param game A reference to the client object that is associated with this table.

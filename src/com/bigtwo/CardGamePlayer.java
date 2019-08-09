@@ -1,6 +1,8 @@
+package com.bigtwo;
+
 /**
  * This class is used to represent a player in general card games.
- * 
+ *
  * @author Kenneth Wong
  */
 public class CardGamePlayer {
@@ -18,7 +20,7 @@ public class CardGamePlayer {
 
 	/**
 	 * Creates and returns an instance of the Player class.
-	 * 
+	 *
 	 * @param name
 	 *            the name of the player
 	 */
@@ -28,7 +30,7 @@ public class CardGamePlayer {
 
 	/**
 	 * Returns the name of this player.
-	 * 
+	 *
 	 * @return the name of this player
 	 */
 	public String getName() {
@@ -37,7 +39,7 @@ public class CardGamePlayer {
 
 	/**
 	 * Sets the name of this player.
-	 * 
+	 *
 	 * @param name
 	 *            the name of this player
 	 */
@@ -47,7 +49,7 @@ public class CardGamePlayer {
 
 	/**
 	 * Adds the specified card to this player.
-	 * 
+	 *
 	 * @param card
 	 *            the specified card to be added to this player
 	 */
@@ -60,7 +62,7 @@ public class CardGamePlayer {
 	/**
 	 * Removes the list of cards from this player, if they are held by this
 	 * player.
-	 * 
+	 *
 	 * @param cards
 	 *            the list of cards to be removed from this player
 	 */
@@ -79,7 +81,7 @@ public class CardGamePlayer {
 
 	/**
 	 * Returns the number of cards held by this player.
-	 * 
+	 *
 	 * @return the number of cards held by this player
 	 */
 	public int getNumOfCards() {
@@ -95,7 +97,7 @@ public class CardGamePlayer {
 
 	/**
 	 * Returns the list of cards held by this player.
-	 * 
+	 *
 	 * @return the list of cards held by this player
 	 */
 	public CardList getCardsInHand() {
@@ -104,7 +106,7 @@ public class CardGamePlayer {
 
 	/**
 	 * Returns the list of cards played by this player.
-	 * 
+	 *
 	 * @param cardIdx
 	 *            the list of the indices of the cards
 	 * @return the list of cards played by this player, or null if the list of

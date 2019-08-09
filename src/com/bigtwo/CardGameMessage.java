@@ -1,6 +1,8 @@
+package com.bigtwo;
+
 /**
  * This class is used to model the message for a network card game.
- * 
+ *
  * @author Kenneth Wong
  *
  */
@@ -40,8 +42,8 @@ public class CardGameMessage extends GameMessage {
 	 */
 	public static final int READY = 4;
 	/**
-	 * Broadcast by the server when all clients are ready for a new game. In this message, playerID is 
-	 * -1 (no being used), and data is a reference to a Deck object (a shuffled deck for the new game).
+	 * Broadcast by the server when all clients are ready for a new game. In this message, playerID is
+	 * -1 (no being used), and data is a reference to a com.bigtwo.Deck object (a shuffled deck for the new game).
 	 */
 	public static final int START = 5;
 	/**
@@ -59,8 +61,8 @@ public class CardGameMessage extends GameMessage {
 	public static final int MSG = 7;
 
 	/**
-	 * Creates and returns an instance of CardGameMessage.
-	 * 
+	 * Creates and returns an instance of com.bigtwo.CardGameMessage.
+	 *
 	 * @param type
 	 *            the message type of this message
 	 * @param playerID

@@ -1,3 +1,7 @@
+package com.bigtwo;
+
+import com.bigtwo.Hands.*;
+
 import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
@@ -29,7 +33,7 @@ public class BigTwoClient implements CardGame, NetworkGame {
 
     /**
      *
-     * This method is the constructor to the BigTwoClient class. It creates and adds 4 players to the
+     * This method is the constructor to the com.bigtwo.BigTwoClient class. It creates and adds 4 players to the
      * playerList associated with this game. It takes the name as an input from the user, sets the server IP
      * address and port and initiates the connection.
      *
@@ -123,7 +127,7 @@ public class BigTwoClient implements CardGame, NetworkGame {
 
     /**
      *
-     * This method creates a CardGameMessage object of type MOVE and passes in the indices of the cards being
+     * This method creates a com.bigtwo.CardGameMessage object of type MOVE and passes in the indices of the cards being
      * played in this move. It then sends this message to the server using the sendMessage function.
      *
      * @param playerID the playerID of the player who makes the move
@@ -317,7 +321,7 @@ public class BigTwoClient implements CardGame, NetworkGame {
 
     /**
      *
-     * This method connects the socket to the server and sends CardGameMessage objects of type JOIN and Ready
+     * This method connects the socket to the server and sends com.bigtwo.CardGameMessage objects of type JOIN and Ready
      * to indicate that the client is wanting to join the game and is ready to play.
      *
      */
@@ -343,10 +347,10 @@ public class BigTwoClient implements CardGame, NetworkGame {
 
     /**
      *
-     * This method implements the logic that the game has to execute based on the different GameMessage object
+     * This method implements the logic that the game has to execute based on the different com.bigtwo.GameMessage object
      * received from the sever.
      *
-     * @param message The GameMessage object received from the thread listening to the server.
+     * @param message The com.bigtwo.GameMessage object received from the thread listening to the server.
      */
     @Override
     public synchronized void parseMessage(GameMessage message) {
@@ -401,10 +405,10 @@ public class BigTwoClient implements CardGame, NetworkGame {
 
     /**
      *
-     * This method writes the given GameMessage object to the ObjectOutputStream which is connected to
+     * This method writes the given com.bigtwo.GameMessage object to the ObjectOutputStream which is connected to
      * the server.
      *
-     * @param message The GameMessage object to be sent to the server.
+     * @param message The com.bigtwo.GameMessage object to be sent to the server.
      */
     @Override
     public void sendMessage(GameMessage message) {
@@ -452,7 +456,7 @@ public class BigTwoClient implements CardGame, NetworkGame {
     }
 
     /**
-     * This method starts a Big Two card game by creating a BigTwoClient object.
+     * This method starts a Big Two card game by creating a com.bigtwo.BigTwoClient object.
      *
      * @param args Any arguments provided to the main function
      */

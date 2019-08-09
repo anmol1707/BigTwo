@@ -1,8 +1,10 @@
+package com.bigtwo;
+
 import java.io.Serializable;
 
 /**
  * This class is used for representing a card in general card games.
- * 
+ *
  * @author Kenneth Wong
  */
 public class Card implements Comparable<Card>, Serializable {
@@ -17,8 +19,8 @@ public class Card implements Comparable<Card>, Serializable {
 	protected final int rank; // 0 - 12
 
 	/**
-	 * Creates and returns an instance of the Card class.
-	 * 
+	 * Creates and returns an instance of the com.bigtwo.Card class.
+	 *
 	 * @param suit
 	 *            an int value between 0 and 3 representing the suit of a card:
 	 *            <p>
@@ -36,7 +38,7 @@ public class Card implements Comparable<Card>, Serializable {
 
 	/**
 	 * Returns the suit of a card.
-	 * 
+	 *
 	 * @return an int value between 0 and 3 representing the suit of a card:
 	 *         <p>
 	 *         0 = Diamond, 1 = Club, 2 = Heart, 3 = Spade
@@ -47,7 +49,7 @@ public class Card implements Comparable<Card>, Serializable {
 
 	/**
 	 * Returns the rank of a card.
-	 * 
+	 *
 	 * @return an int value between 0 and 12 representing the rank of a card:
 	 *         <p>
 	 *         0 = 'A', 1 = '2', 2 = '3', ..., 8 = '9', 9 = '0', 10 = 'J', 11 =
@@ -59,7 +61,7 @@ public class Card implements Comparable<Card>, Serializable {
 
 	/**
 	 * Returns a string representation of the card.
-	 * 
+	 *
 	 * @return a string representation of the card
 	 */
 	public String toString() {
@@ -72,7 +74,7 @@ public class Card implements Comparable<Card>, Serializable {
 
 	/**
 	 * Compares this card with the specified card for order.
-	 * 
+	 *
 	 * @param card
 	 *            the card to be compared
 	 * @return a negative integer, zero, or a positive integer as this card is
@@ -94,7 +96,7 @@ public class Card implements Comparable<Card>, Serializable {
 
 	/**
 	 * Indicates whether the specified card is "equal to" this one.
-	 * 
+	 *
 	 * @param card
 	 *            the reference object with which to compare
 	 * @return true if this card has the same rank and suit as the specified
@@ -107,7 +109,7 @@ public class Card implements Comparable<Card>, Serializable {
 
 	/**
 	 * Returns a hash code value for the card.
-	 * 
+	 *
 	 * @return a hash code value for the card
 	 */
 	public int hashCode() {

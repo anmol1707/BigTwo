@@ -1,3 +1,5 @@
+package com.bigtwo;
+
 /**
  * This class is used to model a Big Two card game server.
  * @author Kenneth Wong
@@ -5,23 +7,23 @@
  */
 public class BigTwoServer extends CardGameServer {
 	/**
-	 * Creates and returns an instance of the BigTwoServer class.
+	 * Creates and returns an instance of the com.bigtwo.BigTwoServer class.
 	 */
 	public BigTwoServer() {
 		super("Big Two Server", 4);
 	}
-	
+
 	/**
-	 * Creates and returns an instance of the BigTwoDeck class.
-	 * @return an instance of the BigTwoDeck class
+	 * Creates and returns an instance of the com.bigtwo.BigTwoDeck class.
+	 * @return an instance of the com.bigtwo.BigTwoDeck class
 	 */
 	public Deck createDeck() {
-		return new BigTwoDeck(); 
+		return new BigTwoDeck();
 	}
-	
+
 	/**
 	 * main() method for starting the server.
-	 * 
+	 *
 	 * @param args
 	 *            the port to be used by the server. The default port 5000 will
 	 *            be used if no arguments has been supplied

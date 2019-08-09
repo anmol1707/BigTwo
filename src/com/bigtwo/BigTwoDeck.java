@@ -1,6 +1,8 @@
+package com.bigtwo;
+
 /**
- * This class is a subclass of the Deck class and specifies the Deck based on the game Big Two.
- * It is a subclass of abstract class Hand.
+ * This class is a subclass of the com.bigtwo.Deck class and specifies the com.bigtwo.Deck based on the game Big Two.
+ * It is a subclass of abstract class com.bigtwo.Hands.Hand.
  *
  * @author Anmol Gupta
  */

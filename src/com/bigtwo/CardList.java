@@ -1,9 +1,11 @@
+package com.bigtwo;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * This class is used to represent a list of cards.
- * 
+ *
  * @author Kenneth Wong
  */
 public class CardList implements Serializable {
@@ -12,7 +14,7 @@ public class CardList implements Serializable {
 
 	/**
 	 * Appends the specified card to the end of this list.
-	 * 
+	 *
 	 * @param card
 	 *            the card to be appended to this list
 	 */
@@ -24,7 +26,7 @@ public class CardList implements Serializable {
 
 	/**
 	 * Returns the card at the specified position in this list.
-	 * 
+	 *
 	 * @param i
 	 *            the index of the card to returned
 	 * @return the card at the specified position in this list, or null if the
@@ -41,7 +43,7 @@ public class CardList implements Serializable {
 	/**
 	 * Removes the card at the specified position in this list. Shifts any
 	 * subsequent cards to the left (subtracts one from their indices).
-	 * 
+	 *
 	 * @param i
 	 *            the index of the card to be removed
 	 * @return the card that is removed from the list, or null if the index is
@@ -60,7 +62,7 @@ public class CardList implements Serializable {
 	 * is present. If the list does not contain the card, it remains unchanged.
 	 * Returns true if this list contained the specified card (or equivalently,
 	 * if this list changed as a result of the call).
-	 * 
+	 *
 	 * @param card
 	 *            the card to be removed from this list, if presents
 	 * @return true if this list contained the specified card; otherwise false
@@ -79,7 +81,7 @@ public class CardList implements Serializable {
 	/**
 	 * Replaces the card at the specified position in this list with the
 	 * specified card.
-	 * 
+	 *
 	 * @param i
 	 *            the index of the card to be replaced
 	 * @param card
@@ -97,7 +99,7 @@ public class CardList implements Serializable {
 
 	/**
 	 * Returns true if this list contains the specified card.
-	 * 
+	 *
 	 * @param card
 	 *            the card whose presence in this list is to be tested
 	 * @return true if this list contains the specified card; otherwise false
@@ -108,7 +110,7 @@ public class CardList implements Serializable {
 
 	/**
 	 * Returns true if this list contains no cards.
-	 * 
+	 *
 	 * @return true if this list contains no cards; otherwise false
 	 */
 	public boolean isEmpty() {
@@ -124,7 +126,7 @@ public class CardList implements Serializable {
 
 	/**
 	 * Returns the number of cards in this list.
-	 * 
+	 *
 	 * @return the number of cards in this list
 	 */
 	public int size() {
@@ -141,7 +143,7 @@ public class CardList implements Serializable {
 
 	/**
 	 * Prints the cards in this list to the console.
-	 * 
+	 *
 	 * @param printFront
 	 *            a boolean value specifying whether to print the face (true) or
 	 *            the black (false) of the cards
@@ -176,7 +178,7 @@ public class CardList implements Serializable {
 
 	/**
 	 * Returns a string representation of the cards in the list
-	 * 
+	 *
 	 * @return a string representation of the cards in the list
 	 */
 	public String toString() {

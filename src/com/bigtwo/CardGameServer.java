@@ -1,3 +1,5 @@
+package com.bigtwo;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.ObjectInputStream;
@@ -15,7 +17,7 @@ import javax.swing.ScrollPaneConstants;
 
 /**
  * This class is used to model a card game server.
- * 
+ *
  * @author Kenneth Wong
  *
  */
@@ -42,8 +44,8 @@ public class CardGameServer {
 	private boolean serverUp = false;
 
 	/**
-	 * Creates and returns an instance of the BigTwoServer class.
-	 * 
+	 * Creates and returns an instance of the com.bigtwo.BigTwoServer class.
+	 *
 	 * @param serverName
 	 *            the name of this card game server
 	 * @param maxNumOfPlayers
@@ -97,7 +99,7 @@ public class CardGameServer {
 
 	/**
 	 * Starts the server at the specified port
-	 * 
+	 *
 	 * @param port
 	 *            the specified port at which the server starts
 	 */
@@ -123,7 +125,7 @@ public class CardGameServer {
 
 	/**
 	 * Parses the incoming message from the specified client.
-	 * 
+	 *
 	 * @param clientSocket
 	 *            the socket connection to the specified client
 	 * @param message
@@ -170,7 +172,7 @@ public class CardGameServer {
 
 	/**
 	 * Broadcasts the specified message to all clients.
-	 * 
+	 *
 	 * @param message
 	 *            the specified message to be broadcast to all clients
 	 */
@@ -192,7 +194,7 @@ public class CardGameServer {
 
 	/**
 	 * Adds a new socket connection to the server
-	 * 
+	 *
 	 * @param clientSocket
 	 *            the socket connection to be added to the server
 	 */
@@ -246,7 +248,7 @@ public class CardGameServer {
 
 	/**
 	 * Removes a connection from the server (possibly due to connection loss).
-	 * 
+	 *
 	 * @param clientSocket
 	 *            the socket connection being removed from the server
 	 */
@@ -280,7 +282,7 @@ public class CardGameServer {
 
 	/**
 	 * adds a player to the game.
-	 * 
+	 *
 	 * @param clientSocket
 	 *            the socket connection to the player who is joining the game
 	 * @param name
@@ -308,7 +310,7 @@ public class CardGameServer {
 
 	/**
 	 * Marks the specified player as ready for a new game.
-	 * 
+	 *
 	 * @param clientSocket
 	 *            the socket connection to the player who becomes ready for a
 	 *            new game
@@ -353,10 +355,10 @@ public class CardGameServer {
 	}
 
 	/**
-	 * Creates and returns an instance of the Deck class. Overrides this method
+	 * Creates and returns an instance of the com.bigtwo.Deck class. Overrides this method
 	 * if a different type of deck is needed.
-	 * 
-	 * @return an instance of the Deck class
+	 *
+	 * @return an instance of the com.bigtwo.Deck class
 	 */
 	public Deck createDeck() {
 		return new Deck();
@@ -381,7 +383,7 @@ public class CardGameServer {
 
 	/**
 	 * Prints the specified message to the text area.
-	 * 
+	 *
 	 * @param msg
 	 */
 	private void println(String msg) {
@@ -391,7 +393,7 @@ public class CardGameServer {
 
 	/**
 	 * This inner class is used for receiving incoming messages from a client
-	 * 
+	 *
 	 * @author Kenneth Wong
 	 *
 	 */
@@ -401,7 +403,7 @@ public class CardGameServer {
 
 		/**
 		 * Creates and returns an instance of the ClientHandler class.
-		 * 
+		 *
 		 * @param clientSocket
 		 *            the socket connection to the client
 		 */
@@ -443,7 +445,7 @@ public class CardGameServer {
 
 		/**
 		 * Creates and returns an instance of the ClientHandler2 class.
-		 * 
+		 *
 		 * @param clientSocket
 		 *            the socket connection to the client
 		 */
@@ -491,7 +493,7 @@ public class CardGameServer {
 
 	/**
 	 * This inner class is used for handling the Clear menu
-	 * 
+	 *
 	 * @author Kenneth Wong
 	 *
 	 */
@@ -503,7 +505,7 @@ public class CardGameServer {
 
 	/**
 	 * This inner class is used for handling the Quit menu
-	 * 
+	 *
 	 * @author Kenneth Wong
 	 *
 	 */
